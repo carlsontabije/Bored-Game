@@ -61,22 +61,17 @@ public class MainActivity extends AppCompatActivity implements ReflexFragment.On
 
     @Override
     public void onBackPressed() {
-        if (backPressedTime + 2000 > System.currentTimeMillis()) {
-            backToast.cancel();
-            Intent intent = new Intent(Intent.ACTION_MAIN);
-            intent.addCategory(Intent.CATEGORY_HOME);
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            startActivity(intent);
-            finish();
-            System.exit(0);
-        } else {
-            backToast = Toast.makeText(getBaseContext(), "Press back again to exit", Toast.LENGTH_SHORT);
-            backToast.show();
-        }
-
-        backPressedTime = System.currentTimeMillis();
+        tellFragments();
+        super.onBackPressed();
     }
 
+    private void tellFragments(){
+        List<Fragment> fragments = getSupportFragmentManager().getFragments();
+        for(Fragment f : fragments){
+            if(f != null && f instanceof BaseFragment)
+                ((BaseFragment)f).onBackPressed();
+        }
+    }
     @Override
     public void onFragmentInteraction(String string) {
 

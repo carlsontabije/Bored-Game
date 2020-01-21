@@ -6,7 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class BaseFragment extends Fragment {
+public class BaseFragment extends Fragment implements OnBackPressed {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -19,6 +19,6 @@ public class BaseFragment extends Fragment {
     }
 
     public void onBackPressed(){
-        getActivity().getSupportFragmentManager().popBackStack();
+
     }
 }
