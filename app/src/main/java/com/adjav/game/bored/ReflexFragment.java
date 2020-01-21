@@ -46,9 +46,4 @@ public class ReflexFragment extends Fragment {
     public interface OnFragmentInteractionListener {
         void onFragmentInteraction(String string);
     }
-
-    public void onBackPressed(){
-        getActivity().getSupportFragmentManager().popBackStack();
-    }
-
 }

@@ -1,6 +1,8 @@
 package com.adjav.game.bored;
 
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -19,6 +21,7 @@ public class MemoryFragment extends Fragment {
     private Button level6;
     private Button level7;
     private Button level8;
+    private OnFragmentInteractionListener mListener;
 
 
 
@@ -45,60 +48,73 @@ public class MemoryFragment extends Fragment {
         level1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                startActivity(new Intent(getActivity(),MemoryLevel1Activity.class));
             }
         });
 
         level2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                startActivity(new Intent(getActivity(),MemoryLevel2Activity.class));
             }
         });
 
         level3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                startActivity(new Intent(getActivity(),MemoryLevel3Activity.class));
             }
         });
 
         level4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                startActivity(new Intent(getActivity(),MemoryLevel4Activity.class));
             }
         });
 
         level5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                startActivity(new Intent(getActivity(),MemoryLevel5Activity.class));
             }
         });
 
         level6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                startActivity(new Intent(getActivity(),MemoryLevel6Activity.class));
             }
         });
 
         level7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                startActivity(new Intent(getActivity(),MemoryLevel7Activity.class));
             }
         });
 
         level8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                startActivity(new Intent(getActivity(),MemoryLevel8Activity.class));
             }
         });
 
         return view;
+    }
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        if (context instanceof OnFragmentInteractionListener) {
+            mListener = (OnFragmentInteractionListener) context;
+        } else {
+            throw new RuntimeException(context.toString() + " must implement OnFragmentInteractionListener");
+        }
+    }
+
+    public interface OnFragmentInteractionListener {
+        void onFragmentInteraction(String string);
     }
 
     public void onBackPressed(){

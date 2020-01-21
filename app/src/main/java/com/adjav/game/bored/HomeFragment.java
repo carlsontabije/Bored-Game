@@ -12,7 +12,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 
 
-public class HomeFragment extends Fragment {
+public class HomeFragment extends Fragment{
 
     private Button play;
 

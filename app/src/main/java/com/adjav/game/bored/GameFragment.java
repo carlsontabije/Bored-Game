@@ -1,6 +1,7 @@
 package com.adjav.game.bored;
 
 
+import android.app.Activity;
 import android.os.Bundle;
 
 
@@ -46,16 +47,12 @@ public class GameFragment extends Fragment {
         reflex.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MainActivity.fragmentManager.beginTransaction().replace(R.id.fragment_container, new ReflexFragment(), null).commit();
+                MainActivity.fragmentManager.beginTransaction().replace(R.id.fragment_container, new ReflexFragment(), null).addToBackStack(null).commit();
 
             }
         });
 
         return view;
     }
-
-    public void onBackPressed(){
-        getActivity().getSupportFragmentManager().popBackStack();
-    }
-
 }
+

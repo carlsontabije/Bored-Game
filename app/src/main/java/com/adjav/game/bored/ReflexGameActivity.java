@@ -84,10 +84,10 @@ public class ReflexGameActivity extends AppCompatActivity {
         screenHeight = size.y;
 
 
-        kirbyySpeed = Math.round(screenHeight / 60);  // 1280 / 60 = 21.333... => 21
-        starSpeed = Math.round(screenWidth / 60); // 768 / 60 = 12.8 => 13
-        pinkSpeed = Math.round(screenWidth / 36);   // 768 / 36 = 21.333... => 21
-        bangSpeed = Math.round(screenWidth / 45); // 768 / 45 = 17.06... => 17
+        kirbyySpeed = Math.round(screenHeight / 60);
+        starSpeed = Math.round(screenWidth / 60);
+        pinkSpeed = Math.round(screenWidth / 36);
+        bangSpeed = Math.round(screenWidth / 30);
 
 
         star.setX(-80);
@@ -266,5 +266,11 @@ public class ReflexGameActivity extends AppCompatActivity {
         }
 
         return true;
+    }
+
+    @Override
+    public void onBackPressed(){
+        super.onBackPressed();
+        finish();
     }
 }
