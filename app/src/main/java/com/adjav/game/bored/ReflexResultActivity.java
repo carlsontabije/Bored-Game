@@ -66,8 +66,8 @@ public class ReflexResultActivity extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(), ReflexGameActivity.class));
     }
 
-    @Override
-    public void onBackPressed(){
-        startActivity(new Intent(getApplicationContext(), ReflexGameActivity.class));
+    public void home(View view) {
+        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+        finish();
     }
 }

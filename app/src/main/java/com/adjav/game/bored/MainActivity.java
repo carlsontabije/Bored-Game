@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Toast;
@@ -61,8 +62,8 @@ public class MainActivity extends AppCompatActivity implements ReflexFragment.On
 
     @Override
     public void onBackPressed() {
-        tellFragments();
-        super.onBackPressed();
+            tellFragments();
+            super.onBackPressed();
     }
 
     private void tellFragments(){
@@ -81,4 +82,30 @@ public class MainActivity extends AppCompatActivity implements ReflexFragment.On
     public void onBackStackChanged() {
 
     }
+
+
+//    public boolean onKeyDown(int keycode, KeyEvent event) {
+//        if (keycode == KeyEvent.KEYCODE_BACK) {
+//            moveTaskToBack(true);
+//        }
+//        return super.onKeyDown(keycode, event);
+//    }
 }
+
+
+//
+//        if (backPressedTime + 2000 > System.currentTimeMillis()) {
+//                backToast.cancel();
+//                Intent intent = new Intent(Intent.ACTION_MAIN);
+//                intent.addCategory(Intent.CATEGORY_HOME);
+//                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//                startActivity(intent);
+//                finish();
+//                System.exit(0);
+//                } else {
+//                backToast = Toast.makeText(getBaseContext(), "Press back again to exit", Toast.LENGTH_SHORT);
+//                backToast.show();
+//                }
+//
+//                backPressedTime = System.currentTimeMillis();
+//                }

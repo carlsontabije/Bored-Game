@@ -18,7 +18,7 @@ import android.widget.TextView;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class ReflexGameActivity extends AppCompatActivity {
+public class ReflexGameActivity extends AppCompatActivity implements ReflexFragment.OnFragmentInteractionListener {
 
     private TextView scoreLabel;
     private TextView startLabel;
@@ -270,8 +270,7 @@ public class ReflexGameActivity extends AppCompatActivity {
     }
 
     @Override
-    public void onBackPressed(){
+    public void onFragmentInteraction(String string) {
 
     }
-
 }

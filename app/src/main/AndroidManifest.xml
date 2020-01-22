@@ -18,7 +18,8 @@
         <activity android:name=".MemoryLevel7Activity"/>
         <activity android:name=".MemoryLevel8Activity"/>
         <activity android:name=".ReflexResultActivity" />
-        <activity android:name=".ReflexGameActivity" />
+        <activity android:name=".ReflexGameActivity"
+            android:noHistory="true"/>
         <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

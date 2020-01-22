@@ -1,10 +1,12 @@
 package com.adjav.game.bored;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 
 
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,9 +14,11 @@ import android.view.WindowManager;
 import android.widget.Button;
 
 
-public class HomeFragment extends Fragment{
+public class HomeFragment extends Fragment {
 
+    private Button exit;
     private Button play;
+
 
     public HomeFragment() {
         // Required empty public constructor
@@ -22,11 +26,26 @@ public class HomeFragment extends Fragment{
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(final LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         play = (Button) view.findViewById(R.id.play);
+        exit = (Button) view.findViewById(R.id.exit);
+
+        final HomeFragment homeFragment = this;
+
+        exit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Intent.ACTION_MAIN);
+                intent.setFlags(intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent.addCategory(Intent.CATEGORY_HOME);
+                startActivity(intent);
+//                getActivity().getFragmentManager().beginTransaction().remove(this, new HomeFragment(), null).commit();
+            }
+        });
 
         play.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,11 +54,9 @@ public class HomeFragment extends Fragment{
             }
         });
 
+
+
         return view;
     }
-    public void onBackPressed(){
-        getActivity().getSupportFragmentManager().popBackStack();
-    }
-
 }
 

@@ -21,6 +21,7 @@ public class GameFragment extends Fragment {
     private Button accuracy;
 
 
+
     public GameFragment() {
         // Required empty public constructor
     }
@@ -47,7 +48,7 @@ public class GameFragment extends Fragment {
         reflex.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MainActivity.fragmentManager.beginTransaction().replace(R.id.fragment_container, new ReflexFragment(), null).addToBackStack(null).commit();
+                MainActivity.fragmentManager.beginTransaction().replace(R.id.fragment_container, new ReflexFragment(), null).commit();
 
             }
         });

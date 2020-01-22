@@ -1,19 +1,19 @@
 package com.adjav.game.bored;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.app.INotificationSideChannel;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import android.view.ContextThemeWrapper;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 
 public class MemoryLevel1Activity extends AppCompatActivity {
@@ -27,6 +27,11 @@ public class MemoryLevel1Activity extends AppCompatActivity {
     int firstCard, secondCard;
     int firstClick, secondClick;
     int cardNumber = 1;
+
+    int counter = 0;
+    int move = 0;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,12 +76,17 @@ public class MemoryLevel1Activity extends AppCompatActivity {
 
         Collections.shuffle(Arrays.asList(cardsArray));
 
+
         tile_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_1, theCard);
-
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
             }
         });
 
@@ -85,7 +95,11 @@ public class MemoryLevel1Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_2, theCard);
-
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
             }
         });
 
@@ -94,7 +108,11 @@ public class MemoryLevel1Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_3, theCard);
-
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
             }
         });
 
@@ -103,7 +121,11 @@ public class MemoryLevel1Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_4, theCard);
-
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
             }
         });
 
@@ -112,7 +134,11 @@ public class MemoryLevel1Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_5, theCard);
-
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
             }
         });
 
@@ -121,7 +147,11 @@ public class MemoryLevel1Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_6, theCard);
-
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
             }
         });
 
@@ -130,7 +160,11 @@ public class MemoryLevel1Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_7, theCard);
-
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
             }
         });
 
@@ -139,7 +173,11 @@ public class MemoryLevel1Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_8, theCard);
-
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
             }
         });
 
@@ -148,7 +186,11 @@ public class MemoryLevel1Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_9, theCard);
-
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
             }
         });
 
@@ -157,7 +199,11 @@ public class MemoryLevel1Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_10, theCard);
-
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
             }
         });
 
@@ -166,7 +212,11 @@ public class MemoryLevel1Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_11, theCard);
-
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
             }
         });
 
@@ -175,7 +225,11 @@ public class MemoryLevel1Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_12, theCard);
-
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
             }
         });
 
@@ -184,7 +238,11 @@ public class MemoryLevel1Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_13, theCard);
-
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
             }
         });
 
@@ -193,7 +251,11 @@ public class MemoryLevel1Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_14, theCard);
-
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
             }
         });
 
@@ -202,7 +264,11 @@ public class MemoryLevel1Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_15, theCard);
-
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
             }
         });
 
@@ -211,11 +277,32 @@ public class MemoryLevel1Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_16, theCard);
-
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
             }
         });
+
+        View decorView = getWindow().getDecorView();
+        decorView.setSystemUiVisibility(
+                View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+                        | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                        | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                        | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                        | View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                        | View.SYSTEM_UI_FLAG_FULLSCREEN);
     }
 
+    private void showSystemUI() {
+        View decorView = getWindow().getDecorView();
+        decorView.setSystemUiVisibility(
+                View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                        | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                        | View.SYSTEM_UI_FLAG_FULLSCREEN);
+
+    }
     private void flipCard(ImageView tile, int card) {
         if(cardsArray[card] == 101){
             tile.setImageResource(image101);
@@ -423,11 +510,11 @@ public class MemoryLevel1Activity extends AppCompatActivity {
                 tile_15.getVisibility() == View.INVISIBLE &&
                 tile_16.getVisibility() == View.INVISIBLE ) {
 
-            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(MemoryLevel1Activity.this);
+            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(new ContextThemeWrapper(this,R.style.AlertDialogCustom));
             alertDialogBuilder
-                    .setMessage("CONGRATS")
+                    .setMessage("Moves: " + move)
                     .setCancelable(false)
-                    .setPositiveButton("NEW", new DialogInterface.OnClickListener() {
+                    .setPositiveButton("PLAY AGAIN", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
                             Intent intent = new Intent(getApplicationContext(),MemoryLevel1Activity.class);
@@ -435,7 +522,7 @@ public class MemoryLevel1Activity extends AppCompatActivity {
                             finish();
                         }
                     })
-                    .setNegativeButton("EXIT", new DialogInterface.OnClickListener() {
+                    .setNegativeButton("LEVEL SELECT", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
                             finish();
@@ -464,5 +551,13 @@ public class MemoryLevel1Activity extends AppCompatActivity {
         image207 = R.drawable.i_7;
         image208 = R.drawable.i_8;
 
+    }
+
+    public void moveCounter(String string) {
+
+        if((counter % 2) == 0) {
+
+            move += 1;
+        }
     }
 }

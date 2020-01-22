@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.view.ContextThemeWrapper;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -26,6 +27,9 @@ public class MemoryLevel8Activity extends AppCompatActivity {
     int firstCard, secondCard;
     int firstClick, secondClick;
     int cardNumber = 1;
+
+    int counter = 0;
+    int move = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -107,6 +111,12 @@ public class MemoryLevel8Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_1, theCard);
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
+
 
             }
         });
@@ -116,6 +126,12 @@ public class MemoryLevel8Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_2, theCard);
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
+
 
             }
         });
@@ -125,6 +141,12 @@ public class MemoryLevel8Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_3, theCard);
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
+
 
             }
         });
@@ -134,6 +156,12 @@ public class MemoryLevel8Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_4, theCard);
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
+
 
             }
         });
@@ -143,6 +171,12 @@ public class MemoryLevel8Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_5, theCard);
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
+
 
             }
         });
@@ -152,6 +186,12 @@ public class MemoryLevel8Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_6, theCard);
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
+
 
             }
         });
@@ -161,6 +201,12 @@ public class MemoryLevel8Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_7, theCard);
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
+
 
             }
         });
@@ -170,6 +216,12 @@ public class MemoryLevel8Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_8, theCard);
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
+
 
             }
         });
@@ -179,6 +231,12 @@ public class MemoryLevel8Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_9, theCard);
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
+
 
             }
         });
@@ -188,6 +246,12 @@ public class MemoryLevel8Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_10, theCard);
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
+
 
             }
         });
@@ -197,6 +261,12 @@ public class MemoryLevel8Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_11, theCard);
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
+
 
             }
         });
@@ -206,6 +276,12 @@ public class MemoryLevel8Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_12, theCard);
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
+
 
             }
         });
@@ -215,6 +291,12 @@ public class MemoryLevel8Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_13, theCard);
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
+
 
             }
         });
@@ -224,6 +306,12 @@ public class MemoryLevel8Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_14, theCard);
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
+
 
             }
         });
@@ -233,6 +321,12 @@ public class MemoryLevel8Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_15, theCard);
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
+
 
             }
         });
@@ -242,6 +336,12 @@ public class MemoryLevel8Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_16, theCard);
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
+
 
             }
         });
@@ -251,6 +351,12 @@ public class MemoryLevel8Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_17, theCard);
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
+
 
             }
         });
@@ -260,6 +366,12 @@ public class MemoryLevel8Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_18, theCard);
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
+
 
             }
         });
@@ -269,6 +381,12 @@ public class MemoryLevel8Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_19, theCard);
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
+
 
             }
         });
@@ -279,6 +397,12 @@ public class MemoryLevel8Activity extends AppCompatActivity {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_20, theCard);
 
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
+
             }
         });
 
@@ -287,6 +411,12 @@ public class MemoryLevel8Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_21, theCard);
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
+
 
             }
         });
@@ -296,6 +426,12 @@ public class MemoryLevel8Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_22, theCard);
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
+
 
             }
         });
@@ -305,6 +441,12 @@ public class MemoryLevel8Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_23, theCard);
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
+
 
             }
         });
@@ -314,6 +456,12 @@ public class MemoryLevel8Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_24, theCard);
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
+
 
             }
         });
@@ -323,6 +471,12 @@ public class MemoryLevel8Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_25, theCard);
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
+
 
             }
         });
@@ -332,6 +486,12 @@ public class MemoryLevel8Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_26, theCard);
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
+
 
             }
         });
@@ -341,6 +501,12 @@ public class MemoryLevel8Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_27, theCard);
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
+
 
             }
         });
@@ -350,6 +516,12 @@ public class MemoryLevel8Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_28, theCard);
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
+
 
             }
         });
@@ -359,6 +531,12 @@ public class MemoryLevel8Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_29, theCard);
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
+
 
             }
         });
@@ -368,6 +546,12 @@ public class MemoryLevel8Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_30, theCard);
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
+
 
             }
         });
@@ -377,6 +561,12 @@ public class MemoryLevel8Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_31, theCard);
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
+
 
             }
         });
@@ -386,9 +576,33 @@ public class MemoryLevel8Activity extends AppCompatActivity {
             public void onClick(View view) {
                 int theCard = Integer.parseInt((String) view.getTag());
                 flipCard(tile_32, theCard);
+                counter=counter+1;
+                if((counter % 2)==0)
+                {
+                    move +=1;
+                }
+
 
             }
         });
+
+        View decorView = getWindow().getDecorView();
+        decorView.setSystemUiVisibility(
+                View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+                        | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                        | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                        | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                        | View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                        | View.SYSTEM_UI_FLAG_FULLSCREEN);
+    }
+
+    private void showSystemUI() {
+        View decorView = getWindow().getDecorView();
+        decorView.setSystemUiVisibility(
+                View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                        | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                        | View.SYSTEM_UI_FLAG_FULLSCREEN);
+
     }
 
     private void flipCard(ImageView tile, int card) {
@@ -763,19 +977,19 @@ public class MemoryLevel8Activity extends AppCompatActivity {
                 tile_31.getVisibility() == View.INVISIBLE &&
                 tile_32.getVisibility() == View.INVISIBLE ) {
 
-            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(MemoryLevel8Activity.this);
+            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(new ContextThemeWrapper(this,R.style.AlertDialogCustom));
             alertDialogBuilder
-                    .setMessage("CONGRATS")
+                    .setMessage("Moves: " + move)
                     .setCancelable(false)
-                    .setPositiveButton("NEW", new DialogInterface.OnClickListener() {
+                    .setPositiveButton("PLAY AGAIN", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
-                            Intent intent = new Intent(getApplicationContext(), MemoryLevel8Activity.class);
+                            Intent intent = new Intent(getApplicationContext(),MemoryLevel1Activity.class);
                             startActivity(intent);
                             finish();
                         }
                     })
-                    .setNegativeButton("EXIT", new DialogInterface.OnClickListener() {
+                    .setNegativeButton("LEVEL SELECT", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
                             finish();
@@ -820,5 +1034,13 @@ public class MemoryLevel8Activity extends AppCompatActivity {
         image215 = R.drawable.level8_15;
         image216 = R.drawable.level8_16;
 
+    }
+
+    public void moveCounter(String string) {
+
+        if((counter % 2) == 0) {
+
+            move += 1;
+        }
     }
 }
