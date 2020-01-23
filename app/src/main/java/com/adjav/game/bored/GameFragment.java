@@ -2,6 +2,7 @@ package com.adjav.game.bored;
 
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 
@@ -50,6 +51,13 @@ public class GameFragment extends Fragment {
             public void onClick(View view) {
                 MainActivity.fragmentManager.beginTransaction().replace(R.id.fragment_container, new ReflexFragment(), null).commit();
 
+            }
+        });
+
+        accuracy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(),AccuracyGameActivity.class));
             }
         });
 

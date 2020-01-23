@@ -9,17 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MemoryLevel1Activity"></activity>
-        <activity android:name=".MemoryLevel2Activity"/>
-        <activity android:name=".MemoryLevel3Activity"/>
-        <activity android:name=".MemoryLevel4Activity"/>
-        <activity android:name=".MemoryLevel5Activity"/>
-        <activity android:name=".MemoryLevel6Activity"/>
-        <activity android:name=".MemoryLevel7Activity"/>
-        <activity android:name=".MemoryLevel8Activity"/>
+        <activity android:name=".AccuracyResultActivity"></activity>
+        <activity android:name=".AccuracyGameActivity" />
+        <activity android:name=".MemoryLevel1Activity" />
+        <activity android:name=".MemoryLevel2Activity" />
+        <activity android:name=".MemoryLevel3Activity" />
+        <activity android:name=".MemoryLevel4Activity" />
+        <activity android:name=".MemoryLevel5Activity" />
+        <activity android:name=".MemoryLevel6Activity" />
+        <activity android:name=".MemoryLevel7Activity" />
+        <activity android:name=".MemoryLevel8Activity" />
         <activity android:name=".ReflexResultActivity" />
-        <activity android:name=".ReflexGameActivity"
-            android:noHistory="true"/>
+        <activity
+            android:name=".ReflexGameActivity"
+            android:noHistory="true" />
         <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
