@@ -1,17 +1,14 @@
 package com.adjav.game.bored;
 
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.ContextThemeWrapper;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import java.util.Arrays;
 import java.util.Collections;
