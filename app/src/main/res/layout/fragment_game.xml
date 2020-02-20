@@ -181,13 +181,23 @@
                     <Button
                         android:id="@+id/memory_play"
                         android:layout_width="118dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="100dp"
                         android:background="@drawable/gradient"
                         android:text="Play"
                         android:textColor="#FFFFFFFF"
                         android:textSize="19sp" />
+
+                    <Button
+                        android:id="@+id/multi_memory"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dp"
+                        android:background="@drawable/gradient"
+                        android:text="multiplayer"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="17sp" />
 
 
                 </LinearLayout>
@@ -297,36 +307,11 @@
                                 android:text="" />
                         </LinearLayout>
 
-                        <ImageView
-                            android:layout_marginLeft="16dp"
-                            android:layout_width="wrap_content"
-
-                            android:layout_height="match_parent" />
-
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:orientation="vertical"
                             android:layout_marginLeft="16dp"
-                            android:layout_height="wrap_content">
-
-                            <TextView
-                                android:layout_gravity="center"
-                                android:layout_width="wrap_content"
-                                android:textSize="20dp"
-                                android:textColor="#6A90B5"
-                                android:fontFamily="@font/roboto_bold"
-                                android:layout_height="wrap_content"
-                                android:text="" />
-
-                            <TextView
-                                android:layout_gravity="center"
-                                android:layout_width="wrap_content"
-                                android:textSize="14dp"
-                                android:textColor="#EE6A90B5"
-                                android:fontFamily="@font/roboto_regular"
-                                android:layout_height="wrap_content"
-                                android:text="" />
-                        </LinearLayout>
+                            android:layout_height="wrap_content"/>
 
 
                     </LinearLayout>
@@ -372,11 +357,22 @@
                         android:layout_width="118dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="100dp"
                         android:text="Play"
                         android:textColor="#FFFFFFFF"
+                        android:layout_marginLeft="10dp"
                         android:textSize="19sp"
                         android:background="@drawable/gradient"/>
+
+                    <Button
+                        android:id="@+id/multi_reflex"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dp"
+                        android:background="@drawable/gradient"
+                        android:text="multiplayer"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="17sp" />
 
 
                 </LinearLayout>
@@ -486,12 +482,6 @@
                                 android:text="" />
                         </LinearLayout>
 
-                        <ImageView
-                            android:layout_marginLeft="16dp"
-                            android:layout_width="wrap_content"
-
-                            android:layout_height="match_parent" />
-
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:orientation="vertical"
@@ -554,13 +544,24 @@
                     <Button
                         android:id="@+id/accuracy_play"
                         android:layout_width="118dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/gradient"
                         android:text="Play"
                         android:textColor="#FFFFFFFF"
-                        android:textSize="19sp"
-                        android:background="@drawable/gradient"/>
+                        android:textSize="19sp" />
+
+                    <Button
+                        android:id="@+id/multi_accuracy"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dp"
+                        android:background="@drawable/gradient"
+                        android:text="multiplayer"
+                        android:textColor="#FFFFFFFF"
+                        android:textSize="17sp" />
 
 
                 </LinearLayout>
