@@ -56,7 +56,12 @@ public class AccuracyResultActivity extends AppCompatActivity {
     }
 
     public void tryAgain(View view) {
+        startActivity(new Intent(getApplicationContext(), AccuracyGameActivity.class));
+    }
+
+    public void home(View view) {
         startActivity(new Intent(getApplicationContext(), MainActivity.class));
+        finish();
     }
 
 

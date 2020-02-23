@@ -13,7 +13,7 @@
         android:layout_height="50dp"
         android:text="Score : 300"
         android:textColor="#000000"
-        android:textSize="18sp"
+        android:textSize="25sp"
         app:fontFamily="@font/coming_soon"
         android:paddingLeft="10dp"
         android:gravity="center_vertical"/>
@@ -31,7 +31,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="130dp"
             android:text="Tap to Start"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textSize="30sp"
             app:fontFamily="@font/coming_soon" />
 
