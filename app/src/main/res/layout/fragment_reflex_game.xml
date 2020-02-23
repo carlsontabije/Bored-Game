@@ -24,16 +24,11 @@
         android:layout_height="match_parent"
         android:background="@drawable/backg">
 
-        <TextView
-            android:id="@+id/startLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="130dp"
-            android:text="Tap to Start"
-            android:textColor="#000000"
-            android:textSize="30sp"
-            app:fontFamily="@font/coming_soon" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="265dp"
+            android:paddingBottom="20dp"
+            android:src="@drawable/taptostart" />
 
         <pl.droidsonroids.gif.GifImageView
             android:id="@+id/kirbyy"
@@ -44,20 +39,20 @@
 
         <ImageView
             android:id="@+id/star"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:src="@drawable/star" />
 
         <ImageView
             android:id="@+id/bang"
-            android:layout_width="34dp"
-            android:layout_height="34dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:src="@drawable/bang" />
 
         <ImageView
             android:id="@+id/pink"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:src="@drawable/pink" />
 
     </FrameLayout>

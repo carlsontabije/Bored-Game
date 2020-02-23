@@ -4,18 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#090707"
+    android:background="@drawable/backgg"
     tools:context=".HomeFragment">
 
     <Button
         android:id="@+id/play"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="150dp"
         android:background="@drawable/gradient"
         android:cursorVisible="false"
         android:fadeScrollbars="false"
         android:text="Let's Play!!!"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/gradient"
+        android:cursorVisible="false"
+        android:fadeScrollbars="false"
+        android:text="About Game"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -43,10 +58,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingBottom="200dp"
-        android:src="@drawable/homescreen"
+        android:src="@drawable/antiback"
         tools:layout_editor_absoluteX="-16dp"
         tools:layout_editor_absoluteY="-76dp">
-
     </ImageView>
 
 
