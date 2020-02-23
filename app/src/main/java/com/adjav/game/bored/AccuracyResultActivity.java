@@ -59,6 +59,11 @@ public class AccuracyResultActivity extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(), AccuracyGameActivity.class));
     }
 
+    public void home(View view) {
+        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+        finish();
+    }
+
 
     @Override
     public boolean dispatchKeyEvent(KeyEvent event) {
