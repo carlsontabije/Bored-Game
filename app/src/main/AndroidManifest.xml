@@ -23,6 +23,16 @@
         <activity
             android:name=".ReflexGameActivity"
             android:noHistory="true" />
+
+        <service android:name=".MusicServiceReflex"
+            android:enabled="true"/>
+
+        <service android:name=".MusicServiceMemory"
+            android:enabled="true"/>
+
+        <service android:name=".MusicServiceAccuracy"
+            android:enabled="true"/>
+
         <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

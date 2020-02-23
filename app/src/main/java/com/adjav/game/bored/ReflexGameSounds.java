@@ -36,7 +36,6 @@ public class ReflexGameSounds {
             soundPool = new SoundPool(SOUND_POOL_MAX, AudioManager.STREAM_MUSIC, 0);
         }
 
-
         hitSound = soundPool.load(context, R.raw.hit, 1);
         hitPinkSound = soundPool.load(context, R.raw.hitpink,1);
         overSound = soundPool.load(context, R.raw.over, 1);
