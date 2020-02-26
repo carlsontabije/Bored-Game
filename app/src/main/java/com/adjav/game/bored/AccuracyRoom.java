@@ -48,7 +48,7 @@ public class AccuracyRoom extends AppCompatActivity {
         roomName = playerName;
 
         listView = findViewById(R.id.ListView);
-        button = findViewById(R.id.button);
+        button = findViewById(R.id.roomButton);
 
         roomsList = new ArrayList<>();
 
@@ -81,10 +81,11 @@ public class AccuracyRoom extends AppCompatActivity {
         roomRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                button.setText("CREATING ROOOM");
+                button.setText("CREATE ROOM");
                 button.setEnabled(true);
-                Intent intent = new Intent(getApplicationContext(), AccuracyMultiplayer.class);
+                Intent intent = new Intent(getApplicationContext(), AccuracyGameActivity.class);
                 intent.putExtra("roomName", roomName);
+                startActivity(intent);
             }
 
             @Override

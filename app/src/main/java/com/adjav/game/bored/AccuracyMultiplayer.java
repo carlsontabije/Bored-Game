@@ -33,7 +33,7 @@ public class AccuracyMultiplayer extends AppCompatActivity {
         setContentView(R.layout.activity_accuracy_multiplayer);
 
         editText = findViewById(R.id.editText);
-        button = findViewById(R.id.button);
+        button = findViewById(R.id.login);
 
         db = FirebaseDatabase.getInstance();
 
@@ -54,6 +54,7 @@ public class AccuracyMultiplayer extends AppCompatActivity {
                     button.setText("LOGGING IN");
                     button.setEnabled(false);
                     playerRef.setValue("players/" + playerName);
+                    playerRef = db.getReference("players/" + playerName);
                     addEventListener();
                     playerRef.setValue("");
                 }
