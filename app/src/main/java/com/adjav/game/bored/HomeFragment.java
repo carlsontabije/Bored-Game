@@ -12,11 +12,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import java.util.concurrent.BlockingQueue;
+
 
 public class HomeFragment extends Fragment {
 
     private Button exit;
     private Button play;
+    private Button about;
 
 
     public HomeFragment() {
@@ -32,6 +35,7 @@ public class HomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         play = (Button) view.findViewById(R.id.play);
         exit = (Button) view.findViewById(R.id.exit);
+        about = (Button) view.findViewById(R.id.about);
 
         final HomeFragment homeFragment = this;
 
@@ -53,7 +57,12 @@ public class HomeFragment extends Fragment {
             }
         });
 
-
+        about.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(),About.class));
+            }
+        });
 
         return view;
     }
