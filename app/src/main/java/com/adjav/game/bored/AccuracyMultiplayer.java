@@ -53,7 +53,6 @@ public class AccuracyMultiplayer extends AppCompatActivity {
                 if (!playerName.equals("")){
                     button.setText("LOGGING IN");
                     button.setEnabled(false);
-                    playerRef.setValue("players/" + playerName);
                     playerRef = db.getReference("players/" + playerName);
                     addEventListener();
                     playerRef.setValue("");

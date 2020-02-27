@@ -11,6 +11,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TimePicker;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -68,9 +69,11 @@ public class AccuracyRoom extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 roomName = roomsList.get(position);
-                roomRef = db.getReference("rooms/" + roomName + "/player 1");
+                roomRef = db.getReference("rooms/" + roomName + "/player 2");
                 addRoomEventListener();
                 roomRef.setValue(playerName);
+
+                Toast.makeText(AccuracyRoom.this, "You joined the game", Toast.LENGTH_SHORT).show();
             }
         });
 
