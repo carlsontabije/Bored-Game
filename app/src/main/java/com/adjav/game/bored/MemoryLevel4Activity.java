@@ -607,15 +607,15 @@ public class MemoryLevel4Activity extends AppCompatActivity {
             alertDialogBuilder
                     .setMessage("Moves: " + move)
                     .setCancelable(false)
-                    .setPositiveButton("PLAY AGAIN", new DialogInterface.OnClickListener() {
+                    .setPositiveButton("Next Level", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
-                            Intent intent = new Intent(getApplicationContext(),MemoryLevel1Activity.class);
+                            Intent intent = new Intent(getApplicationContext(),MemoryLevel5Activity.class);
                             startActivity(intent);
                             finish();
                         }
                     })
-                    .setNegativeButton("LEVEL SELECT", new DialogInterface.OnClickListener() {
+                    .setNegativeButton("Back", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
                             finish();
