@@ -1070,9 +1070,17 @@ public class MemoryLevel8Activity extends AppCompatActivity {
                             finish();
                         }
                     })
-                    .setNegativeButton("LEVEL SELECT", new DialogInterface.OnClickListener() {
+                    .setNeutralButton("Level Select", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
+                            finish();
+                        }
+                    })
+
+                    .setNegativeButton("Home", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            startActivity(new Intent(getApplicationContext(), MainActivity.class));
                             finish();
                         }
                     });
