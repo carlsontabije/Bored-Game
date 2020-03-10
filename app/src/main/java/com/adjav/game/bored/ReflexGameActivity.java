@@ -25,7 +25,7 @@ import java.util.TimerTask;
 public class ReflexGameActivity extends AppCompatActivity implements ReflexFragment.OnFragmentInteractionListener {
 
     private TextView scoreLabel;
-    private TextView startLabel;
+    private ImageView startLabel;
     private ImageView kirbyy;
     private ImageView star;
     private ImageView pink;

@@ -33,13 +33,12 @@
         android:textColor="#000000"
         android:textSize="20sp" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+    <ImageButton
+        android:layout_marginTop="100dp"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
         android:onClick="tryAgain"
-        android:text="Try Again"
-        android:background="@drawable/gradient"
+        android:background="@drawable/tryagain"
         android:textAllCaps="false" />
 
     <Button
@@ -47,9 +46,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:background="@drawable/gradient"
+        android:background="@drawable/home"
         android:onClick="home"
-        android:text="Home"
         android:textAllCaps="false" />
 
 

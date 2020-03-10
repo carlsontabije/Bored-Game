@@ -102,11 +102,10 @@
 
 
     <Button
-        android:text="START"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="@drawable/gradient"
+        android:background="@drawable/start"
         android:layout_centerHorizontal="true"
         android:id="@+id/button"/>
 

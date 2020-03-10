@@ -8,13 +8,10 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Reflex Game"
-        android:textColor="#FFFFFF"
-        app:fontFamily="@font/coming_soon"
-        android:textSize="32sp" />
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:src="@drawable/reflexgame" />
 
     <TableLayout
         android:layout_width="wrap_content"
@@ -32,7 +29,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="10dp"
-                android:text="30 point"
+                android:text="30 points"
                 android:textColor="#FFFFFF"
                 app:fontFamily="@font/coming_soon"
                 android:textSize="18sp" />
@@ -51,7 +48,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="10dp"
-                android:text="10 point"
+                android:text="10 points"
                 android:textColor="#FFFFFF"
                 app:fontFamily="@font/coming_soon"
                 android:textSize="18sp" />
@@ -84,15 +81,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:background="@drawable/gradient"
-        android:text="START" />
+        android:background="@drawable/start" />
 
     <Button
         android:id="@+id/reflex_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:background="@drawable/gradient"
-        android:text="Back"/>
+        android:background="@drawable/back" />
 
 </LinearLayout>

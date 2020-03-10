@@ -84,7 +84,6 @@ public class AccuracyRoom extends AppCompatActivity {
         roomRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                button.setText("CREATE ROOM");
                 button.setEnabled(true);
                 Intent intent = new Intent(getApplicationContext(), AccuracyGameActivity.class);
                 intent.putExtra("roomName", roomName);
@@ -93,7 +92,6 @@ public class AccuracyRoom extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-                button.setText("CREATE ROOM");
                 button.setEnabled(true);
                 Toast.makeText(AccuracyRoom.this, "ERROR!", Toast.LENGTH_SHORT).show();
             }
@@ -111,7 +109,7 @@ public class AccuracyRoom extends AppCompatActivity {
                     roomsList.add(snapshot.getKey());
 
                     ArrayAdapter<String> adapter = new ArrayAdapter<>(AccuracyRoom.this,
-                            android.R.layout.simple_list_item_1, roomsList);
+                            R.layout.list_text_color, roomsList);
                     listView.setAdapter(adapter);
                 }
             }
