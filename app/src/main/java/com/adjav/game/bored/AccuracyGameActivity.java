@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.os.PowerManager;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -229,7 +230,7 @@ public class AccuracyGameActivity extends AppCompatActivity {
 
     void doBindService(){
         bindService(new Intent(this, MusicServiceAccuracy.class),
-                Scon, Context.BIND_AUTO_CREATE);
+                Scon,Context.BIND_AUTO_CREATE);
         mIsBound = true;
     }
 
@@ -270,10 +271,10 @@ public class AccuracyGameActivity extends AppCompatActivity {
         }
     }
 
-
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        this.finish();
 
         //UNBIND music service
         doUnbindService();
@@ -422,8 +423,13 @@ public class AccuracyGameActivity extends AppCompatActivity {
                     Toast.makeText(AccuracyGameActivity.this, "GAME OVER", Toast.LENGTH_SHORT).show();
                     button.setEnabled(true);
 
-                    Intent intent = new Intent(getApplicationContext(), AccuracyResultActivity.class);
+                    Intent intent = new Intent(AccuracyGameActivity.this, AccuracyResultActivity.class);
                     intent.putExtra("SCORE", score);
+
+                    doUnbindService();
+                    Intent music = new Intent();
+                    music.setClass(AccuracyGameActivity.this, MusicServiceAccuracy.class);
+                    stopService(music);
 
                     startActivity(intent);
                     sound.playOverSound();
