@@ -17,6 +17,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+    }
 }
 
 dependencies {
@@ -34,6 +37,5 @@ dependencies {
     implementation 'com.google.firebase:firebase-database:19.2.1'
     implementation 'com.github.medyo:android-about-page:1.2.5'
     implementation 'com.google.firebase:firebase-auth:19.2.0'
-    implementation 'com.google.firebase:firebase-admin:6.12.2'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
 }
