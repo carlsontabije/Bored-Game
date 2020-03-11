@@ -24,16 +24,13 @@
         android:layout_height="match_parent"
         android:background="@drawable/backg">
 
-        <TextView
+        <ImageView
             android:id="@+id/startLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="130dp"
-            android:text="Tap to Start"
-            android:textColor="#FFFFFF"
-            android:textSize="30sp"
-            app:fontFamily="@font/coming_soon" />
+            android:layout_marginTop="50dp"
+            android:background="@drawable/taptostart"/>
 
         <pl.droidsonroids.gif.GifImageView
             android:id="@+id/kirbyy"

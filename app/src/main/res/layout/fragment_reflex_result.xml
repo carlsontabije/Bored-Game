@@ -42,12 +42,11 @@
         android:textSize="20sp" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="54dp"
         android:layout_marginTop="50dp"
-        android:background="@drawable/gradient"
+        android:background="@drawable/tryagain"
         android:onClick="tryAgain"
-        android:text="Try Again"
         android:textAllCaps="false" />
 
     <Button
@@ -55,9 +54,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:background="@drawable/gradient"
+        android:background="@drawable/home"
         android:onClick="home"
-        android:text="Home"
         android:textAllCaps="false" />
 
 

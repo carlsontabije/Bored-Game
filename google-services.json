@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "605046288691",
+    "firebase_url": "https://boredgame-cbd60.firebaseio.com",
+    "project_id": "boredgame-cbd60",
+    "storage_bucket": "boredgame-cbd60.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605046288691:android:e4bc5b2753ddc7246d4e46",
+        "android_client_info": {
+          "package_name": "com.adjav.game.bored"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "605046288691-t5tn73gnq4er1j4gvcnms0ftu6q11loc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYHbZeL8JQWgbpS6jlLZ32ezrvW1IxRIY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "605046288691-t5tn73gnq4er1j4gvcnms0ftu6q11loc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

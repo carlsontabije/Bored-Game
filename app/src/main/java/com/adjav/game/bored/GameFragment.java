@@ -17,6 +17,7 @@ public class GameFragment extends Fragment {
     private Button memory;
     private Button reflex;
     private Button accuracy;
+    private Button multiAccuracy;
 
 
 
@@ -34,6 +35,7 @@ public class GameFragment extends Fragment {
         memory = view.findViewById(R.id.memory_play);
         reflex = view.findViewById(R.id.reflex_play);
         accuracy = view.findViewById(R.id.accuracy_play);
+        multiAccuracy = view.findViewById(R.id.multi_accuracy);
 
         memory.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,6 +57,13 @@ public class GameFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getActivity(),AccuracyGameActivity.class));
+            }
+        });
+
+        multiAccuracy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(),AccuracyMultiplayer.class));
             }
         });
 

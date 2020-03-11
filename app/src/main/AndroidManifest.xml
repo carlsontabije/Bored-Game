@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AccuracyResultActivity"></activity>
+        <activity android:name=".About" />
+        <activity android:name=".AccuracyRoom" />
+        <activity android:name=".AccuracyMultiplayer" />
+        <activity android:name=".AccuracyResultActivity" />
         <activity android:name=".AccuracyGameActivity" />
         <activity android:name=".MemoryLevel1Activity" />
         <activity android:name=".MemoryLevel2Activity" />
@@ -24,14 +27,15 @@
             android:name=".ReflexGameActivity"
             android:noHistory="true" />
 
-        <service android:name=".MusicServiceReflex"
-            android:enabled="true"/>
-
-        <service android:name=".MusicServiceMemory"
-            android:enabled="true"/>
-
-        <service android:name=".MusicServiceAccuracy"
-            android:enabled="true"/>
+        <service
+            android:name=".MusicServiceReflex"
+            android:enabled="true" />
+        <service
+            android:name=".MusicServiceMemory"
+            android:enabled="true" />
+        <service
+            android:name=".MusicServiceAccuracy"
+            android:enabled="true" />
 
         <activity android:name=".Splash">
             <intent-filter>
