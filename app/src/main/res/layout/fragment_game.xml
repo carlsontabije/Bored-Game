@@ -10,7 +10,6 @@
     android:padding="24dp"
     tools:context=".MainActivity">
 
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -148,7 +147,7 @@
 
             <LinearLayout
                 android:layout_marginLeft="6dp"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:orientation="horizontal"
                 android:layout_height="wrap_content">
 
@@ -156,6 +155,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:layout_marginLeft="-15dp"
                     android:orientation="horizontal">
 
 
@@ -317,6 +317,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="-15dp"
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
@@ -324,17 +325,16 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        />
+                        android:layout_gravity="center" />
 
                     <Button
                         android:id="@+id/reflex_play"
                         android:layout_width="118dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:layout_marginLeft="3dp"
                         android:background="@drawable/play"
                         android:textColor="#FFFFFFFF"
-                        android:layout_marginLeft="10dp"
                         android:textSize="19sp" />
 
                     <Button
@@ -506,6 +506,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:layout_marginLeft="-15dp"
                     android:orientation="horizontal">
 
                     />
@@ -515,7 +516,7 @@
                         android:layout_width="118dp"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginLeft="3dp"
                         android:background="@drawable/play"
                         android:textColor="#FFFFFFFF"
                         android:textSize="19sp" />
@@ -540,5 +541,4 @@
 
 
     </androidx.cardview.widget.CardView>
-
 </LinearLayout>

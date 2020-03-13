@@ -26,7 +26,7 @@ public class About extends AppCompatActivity {
         View aboutPage = new AboutPage(this)
                 .isRTL(false)
                 .setImage(R.drawable.logo)  
-                .setDescription("This is a demo version")
+                .setDescription("Bored game is a game developed to kill your boredom with these 3 games that we have (Memory Game, Reflex Game, and Accuracy Game.) This game will kill your boredom and at the same time you'll be having fun. ENJOY PLAYING :)")
                 .addItem(new Element().setTitle("Version 1.0"))
                 .addItem(adsElement)
                 .addGroup("Connect with us")

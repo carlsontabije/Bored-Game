@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import java.io.BufferedReader;
 import java.util.concurrent.BlockingQueue;
 
 
@@ -20,7 +21,9 @@ public class HomeFragment extends Fragment {
     private Button exit;
     private Button play;
     private Button about;
+    private Button sound;
 
+    private int buttonState = 1;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -36,6 +39,19 @@ public class HomeFragment extends Fragment {
         play = (Button) view.findViewById(R.id.play);
         exit = (Button) view.findViewById(R.id.exit);
         about = (Button) view.findViewById(R.id.about);
+        sound = (Button) view.findViewById(R.id.sound);
+            sound.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if(buttonState % 2 == 1){
+                        sound.setBackground(getResources().getDrawable(R.drawable.off));
+                    }
+                    else {
+                        sound.setBackground(getResources().getDrawable(R.drawable.on));
+                    }
+                    buttonState++;
+                }
+            });
 
         final HomeFragment homeFragment = this;
 
