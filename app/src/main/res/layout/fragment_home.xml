@@ -51,14 +51,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
+    <Button
+        android:id="@+id/sound"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/on"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingBottom="200dp"
         android:src="@drawable/antiback"
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="-76dp">
-    </ImageView>
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"></ImageView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
