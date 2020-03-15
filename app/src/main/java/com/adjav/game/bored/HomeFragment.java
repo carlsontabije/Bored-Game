@@ -1,7 +1,10 @@
 package com.adjav.game.bored;
 
 
+import android.content.Context;
 import android.content.Intent;
+import android.media.AudioManager;
+import android.os.Build;
 import android.os.Bundle;
 
 
@@ -12,8 +15,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import java.io.BufferedReader;
-import java.util.concurrent.BlockingQueue;
 
 
 public class HomeFragment extends Fragment {
@@ -23,35 +24,33 @@ public class HomeFragment extends Fragment {
     private Button about;
     private Button sound;
 
-    private int buttonState = 1;
+    boolean buttonState = true;
 
     public HomeFragment() {
-        // Required empty public constructor
+
     }
-
-
     @Override
     public View onCreateView(final LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         play = (Button) view.findViewById(R.id.play);
         exit = (Button) view.findViewById(R.id.exit);
         about = (Button) view.findViewById(R.id.about);
         sound = (Button) view.findViewById(R.id.sound);
-            sound.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if(buttonState % 2 == 1){
-                        sound.setBackground(getResources().getDrawable(R.drawable.off));
-                    }
-                    else {
-                        sound.setBackground(getResources().getDrawable(R.drawable.on));
-                    }
-                    buttonState++;
-                }
-            });
+
+        sound.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (buttonState){
+                    sound.setBackgroundResource(R.drawable.off);
+                    MuteAudio();
+                }else {
+                    sound.setBackgroundResource(R.drawable.on);
+                    UnMuteAudio();
+                }buttonState = !buttonState;
+            }
+        });
 
         final HomeFragment homeFragment = this;
 
@@ -62,7 +61,6 @@ public class HomeFragment extends Fragment {
                 intent.setFlags(intent.FLAG_ACTIVITY_CLEAR_TOP);
                 intent.addCategory(Intent.CATEGORY_HOME);
                 startActivity(intent);
-//                getActivity().getFragmentManager().beginTransaction().remove(this, new HomeFragment(), null).commit();
             }
         });
 
@@ -82,5 +80,30 @@ public class HomeFragment extends Fragment {
 
         return view;
     }
-}
 
+    public void MuteAudio(){
+        AudioManager mAlramMAnager = (AudioManager) getContext().getSystemService(Context.AUDIO_SERVICE);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            mAlramMAnager.adjustStreamVolume(AudioManager.STREAM_ALARM, AudioManager.ADJUST_MUTE, 0);
+            mAlramMAnager.adjustStreamVolume(AudioManager.STREAM_MUSIC, AudioManager.ADJUST_MUTE, 0);
+            mAlramMAnager.adjustStreamVolume(AudioManager.STREAM_RING, AudioManager.ADJUST_MUTE, 0);
+        } else {
+            mAlramMAnager.setStreamMute(AudioManager.STREAM_ALARM, true);
+            mAlramMAnager.setStreamMute(AudioManager.STREAM_MUSIC, true);
+            mAlramMAnager.setStreamMute(AudioManager.STREAM_RING, true);
+        }
+    }
+
+    public void UnMuteAudio(){
+        AudioManager mAlramMAnager = (AudioManager) getContext().getSystemService(Context.AUDIO_SERVICE);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            mAlramMAnager.adjustStreamVolume(AudioManager.STREAM_ALARM, AudioManager.ADJUST_UNMUTE, 0);
+            mAlramMAnager.adjustStreamVolume(AudioManager.STREAM_MUSIC, AudioManager.ADJUST_UNMUTE,0);
+            mAlramMAnager.adjustStreamVolume(AudioManager.STREAM_RING, AudioManager.ADJUST_UNMUTE, 0);
+        } else {
+            mAlramMAnager.setStreamMute(AudioManager.STREAM_ALARM, false);
+            mAlramMAnager.setStreamMute(AudioManager.STREAM_MUSIC, false);
+            mAlramMAnager.setStreamMute(AudioManager.STREAM_RING, false);
+        }
+    }
+}
